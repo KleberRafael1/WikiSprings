@@ -10,16 +10,17 @@ Wiki Spring é uma página web inspirada na Wikipedia, dedicada à banda **The O
 
 ## 🖼 Estrutura do projeto
 
+```
 wiki-spring/
 │
-├─ assets/
-│ └─ images/
-│ └─ offspring.jpg # Foto da banda
-│
-├─ index.html # Página principal
-├─ style.css # Estilos
-└─ README.md # Este arquivo
-
+├── index.html # Página principal
+├── style.css # Estilos do site
+├── assets/
+│ └── images/
+│ ├── logo.png # Logo do Wiki Spring
+│ └── offspring.jpg # Foto da banda
+└── README.md # Este arquivo
+```
 
 ## 📌 Funcionalidades
 
@@ -41,3 +42,4 @@ wiki-spring/
 - Adicionar mais seções como **discografia**, **integrantes** e **curiosidades**  
 - Implementar **temas escuros/claro** com CSS  
 - Criar uma versão dinâmica com **JavaScript**  
+
