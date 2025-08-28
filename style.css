@@ -1,0 +1,125 @@
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul { 
+    list-style: none; 
+    padding-left: 5px; 
+}
+
+a { 
+    color: blue; 
+    text-decoration: none; 
+}
+
+/* Barra superior */
+.bar {
+    background-color: #f9f9fb;
+    padding: 15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+
+/* Conteúdo principal */
+.content {
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding: 1rem;
+}
+
+/* Sidebar */
+.sidebar {
+    grid-area: sidebar;
+    border-right: solid 1px #cdcdcd;
+}
+
+/* Main */
+.main {
+    grid-area: main;
+}
+
+.main figure {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.main figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Anchors */
+.anchors {
+    grid-area: anchors;
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+
+/* Footer */
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Logo Wiki Spring */
+.logo {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-wiki {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.logo-wiki .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f9f9fb;
+    border: 2px solid #cdcdcd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #333;
+}
+
+.logo-wiki .text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2a2a2a;
+}
+
+/* Responsividade */
+@media(max-width: 1024px){
+    .content {
+        grid-template-areas:
+            "main main"
+            "sidebar anchors";
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 768px){
+    .content {
+        grid-template-areas:
+            "main"
+            "sidebar"
+            "anchors";
+        grid-template-columns: 1fr;
+    }
+}
