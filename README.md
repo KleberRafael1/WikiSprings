@@ -41,5 +41,8 @@ wiki-spring/
 
 - Adicionar mais seções como **discografia**, **integrantes** e **curiosidades**  
 - Implementar **temas escuros/claro** com CSS  
-- Criar uma versão dinâmica com **JavaScript**  
+- Criar uma versão dinâmica com **JavaScript**
+- Fontes do Google Fonts
+- Ícones do Font Awesome
+- Animações leves
 
